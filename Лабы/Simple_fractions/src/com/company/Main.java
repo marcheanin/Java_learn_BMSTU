@@ -29,7 +29,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-	    simpleFraction A = new simpleFraction(2, 3);
+	    simpleFraction A = new simpleFraction(4, 6);
         simpleFraction B = new simpleFraction(5, 6);
         simpleFraction C = fractionPlus(A, B);
         simpleFraction D = fractionMul(A, B);
