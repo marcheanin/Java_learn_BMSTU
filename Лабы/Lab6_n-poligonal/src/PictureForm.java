@@ -1,10 +1,8 @@
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-
-import java.awt.Font;
 import java.awt.event.*;
-import java.awt.FlowLayout;
+
 
 
 public class PictureForm {
@@ -32,6 +30,14 @@ public class PictureForm {
             public void stateChanged(ChangeEvent e) {
                 int k = (int)sideCountSpinner.getValue();
                 canvasPanel1.setSideNumber(k);
+            }
+        });
+
+        sideLenSpinner.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                int k = (int)sideCountSpinner.getValue();
+                canvasPanel1.setSideLen(k);
             }
         });
     }

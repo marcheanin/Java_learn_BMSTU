@@ -18,6 +18,7 @@ public class CanvasPanel extends JPanel {
 
     public void setSideLen(int value){
         sideLen = value;
+        radius = (int) (sideLen / (2 * Math.sin(360 / sideNumber / 2)));
         repaint();
     }
 
@@ -49,17 +50,16 @@ public class CanvasPanel extends JPanel {
         super.paintComponent(g);
         changeColor(g);
 
-        double a, b, z = 0; int n = sideNumber;
+        double a, b; int n = sideNumber;
         double angle = 360.0 / n;
+        double startAngle = 270;
         for (int i = 0; i < n; i++){
-            a = Math.cos(z / 180.0 * Math.PI);
-            b = Math.sin(z / 180.0 * Math.PI);
-            x[i] = centerX + (int)(Math.round(a) * radius);
-            y[i] = centerY - (int)(Math.round(b) * radius);
-            z += angle;
+            a = startAngle + angle * i;
+            b = a * Math.PI / 180;
+            x[i] = (int)(centerX + radius * Math.cos(b));
+            y[i] = (int)(centerY + radius * Math.sin(b));
         }
-        g.drawOval(centerX, centerY, radius, radius);
+        //g.drawOval(centerX, centerY, radius, radius);
         g.drawPolygon(x, y, sideNumber);
-        //g.drawLine(10, 10, 50, 50);
     }
 }
