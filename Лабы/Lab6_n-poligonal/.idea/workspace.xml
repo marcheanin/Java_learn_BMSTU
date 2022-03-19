@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="232c9ce9-e30d-421f-9437-33d94ef6c9c7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Factorial/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Factorial/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Factorial/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Factorial/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Factorial/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Factorial/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Factorial/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Factorial/Factorial.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Factorial/src/com/company/Factorial.java" beforeDir="false" />
+    <list default="true" id="7bec4c84-a7a4-445b-a003-550a92562d1a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lab6_n-guide/src/CanvasPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6_n-guide/src/CanvasPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6_n-guide/src/PictureForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6_n-guide/src/PictureForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Отчеты/~$p2_IU922b_MarchenkoAI.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Отчеты/~WRL0004.tmp" beforeDir="false" />
     </list>
@@ -32,8 +26,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="26ZbSIqFhOp80NxY5HRgRb3OC05" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="26b0bQvVjl077xM4Gd6IumsWATB" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -94,7 +87,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab6_n-guide" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="123" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="223" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -103,22 +99,9 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="PictureForm" />
-      <module name="Lab6_n-guide" />
+      <module name="untitled104" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Lab6_n-guide" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Lab6_n-guide" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,12 +115,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="232c9ce9-e30d-421f-9437-33d94ef6c9c7" name="Changes" comment="" />
-      <created>1647634057062</created>
+      <changelist id="7bec4c84-a7a4-445b-a003-550a92562d1a" name="Changes" comment="" />
+      <created>1647677052431</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1647634057062</updated>
+      <updated>1647677052431</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

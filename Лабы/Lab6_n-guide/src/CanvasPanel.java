@@ -10,6 +10,7 @@ public class CanvasPanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.setColor(Color.RED);
-        g.drawOval(10, 10, radius, radius);
+        g.drawOval(50, 50, radius, radius + 5);
+        g.drawLine(10, 10, 10, 30);
     }
 }
