@@ -2,28 +2,28 @@ import javax.swing.*;
 import java.awt.*;
 
 public class CanvasPanel extends JPanel {
-    private int sideLen = 1;
+    private int sideLen = 30;
     private int sideNumber = 3;
-    private int radius = 30;
+    private int radius = (int)Math.round(sideLen / (2 * Math.sin(Math.PI / (double)sideNumber)));
     private int x[] = new int[200];
     private int y[] = new int[200];
-    private int centerX = 50;
-    private int centerY = 50;
-    private String color = "White";
+    private int centerX = 200;
+    private int centerY = 200;
+    private String color = "Black";
 
     public void setSideCount(int n){
         sideNumber = n;
+        radius = Math.abs((int)Math.round(sideLen / (2 * Math.sin(Math.PI / (double)sideNumber))));
+        System.out.println(sideNumber);
         repaint();
     }
 
     public void setSideLen(int value){
         sideLen = value;
-        radius = (int) (sideLen / (2 * Math.sin(360 / sideNumber / 2)));
-        repaint();
-    }
+        //System.out.println(sideLen);
+        radius = Math.abs((int)Math.round(sideLen / (2 * Math.sin(Math.PI / (double)sideNumber))));
+        System.out.println(radius);
 
-    public void setSideNumber(int value){
-        sideNumber = value;
         repaint();
     }
 
@@ -40,8 +40,11 @@ public class CanvasPanel extends JPanel {
             case ("Yellow"):
                 g.setColor(Color.yellow);
                 break;
-            default:
+            case ("White") :
                 g.setColor(Color.white);
+                break;
+            default:
+                g.setColor(Color.black);
                 break;
         }
     }

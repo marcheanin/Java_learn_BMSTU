@@ -41,7 +41,7 @@
       <component id="3b92d" class="CanvasPanel" binding="canvasPanel1" default-binding="true">
         <constraints>
           <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="150"/>
+            <preferred-size width="500" height="500"/>
           </grid>
         </constraints>
         <properties/>
@@ -53,7 +53,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="White"/>
+          <text value="Black"/>
         </properties>
       </component>
       <component id="7c140" class="javax.swing.JSpinner" binding="sideLenSpinner">

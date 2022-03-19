@@ -5,6 +5,7 @@ public class CanvasPanel extends JPanel {
     private int radius = 20;
     public void setRadius(int r){
         radius = r;
+        System.out.println(radius);
         repaint();
     }
     protected void paintComponent(Graphics g) {

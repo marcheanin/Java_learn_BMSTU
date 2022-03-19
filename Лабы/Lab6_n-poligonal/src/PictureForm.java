@@ -16,7 +16,7 @@ public class PictureForm {
     public PictureForm(){
         sideCountSpinner.setValue(3);
         //colorField = new JTextField("Red");
-        sideLenSpinner.setValue(1);
+        sideLenSpinner.setValue(30);
         colorField.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String color = colorField.getText();
@@ -26,17 +26,15 @@ public class PictureForm {
         });
 
         sideCountSpinner.addChangeListener(new ChangeListener() {
-            @Override
             public void stateChanged(ChangeEvent e) {
                 int k = (int)sideCountSpinner.getValue();
-                canvasPanel1.setSideNumber(k);
+                canvasPanel1.setSideCount(k);
             }
         });
 
         sideLenSpinner.addChangeListener(new ChangeListener() {
-            @Override
             public void stateChanged(ChangeEvent e) {
-                int k = (int)sideCountSpinner.getValue();
+                int k = (int)sideLenSpinner.getValue();
                 canvasPanel1.setSideLen(k);
             }
         });
