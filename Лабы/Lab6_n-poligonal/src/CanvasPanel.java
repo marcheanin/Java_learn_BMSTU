@@ -5,8 +5,8 @@ public class CanvasPanel extends JPanel {
     private int sideLen = 30;
     private int sideNumber = 3;
     private int radius = (int)Math.round(sideLen / (2 * Math.sin(Math.PI / (double)sideNumber)));
-    private int x[] = new int[200];
-    private int y[] = new int[200];
+    private int x[] = new int[1000];
+    private int y[] = new int[1000];
     private int centerX = 200;
     private int centerY = 200;
     private String color = "Black";
@@ -42,6 +42,9 @@ public class CanvasPanel extends JPanel {
                 break;
             case ("White") :
                 g.setColor(Color.white);
+                break;
+            case ("Green"):
+                g.setColor(Color.green);
                 break;
             default:
                 g.setColor(Color.black);
