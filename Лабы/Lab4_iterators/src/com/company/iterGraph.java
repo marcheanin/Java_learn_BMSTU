@@ -30,9 +30,6 @@ public class iterGraph implements Iterable {
         used = new int[n];
         for (int i = 0; i < n; i++) used[i] = 0;
         dfs(0);
-        for (int i = 0; i < n; i++){
-            System.out.println(vertexes.get(i));
-        }
     }
 
     public graphIterator iterator(){
