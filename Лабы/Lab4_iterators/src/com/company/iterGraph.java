@@ -3,10 +3,10 @@ package com.company;
 import java.util.ArrayList;
 
 public class iterGraph implements Iterable {
-    private int n;
-    ArrayList<Integer> g[];
+    private final int n;
+    ArrayList<Integer>[] g;
     ArrayList<Integer> vertexes;
-    private int[] used;
+    private final int[] used;
 
     private void dfs(int v){
         used[v] = 1;
@@ -20,7 +20,7 @@ public class iterGraph implements Iterable {
         }
     }
 
-    public iterGraph(ArrayList<Integer> x[], int n){
+    public iterGraph(ArrayList<Integer>[] x, int n){
         this.n = n;
         g = new ArrayList [n];
         vertexes = new ArrayList<>();
@@ -51,7 +51,7 @@ public class iterGraph implements Iterable {
     public String toString(){
         String ans = "";
         for (int i = 0; i < n; i++){
-            System.out.println(vertexes.get(i));
+            //System.out.println(vertexes.get(i));
             String tmp = String.valueOf(vertexes.get(i));
             ans += tmp + " ";
         }
