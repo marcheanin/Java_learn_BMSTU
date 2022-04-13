@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -22,11 +23,16 @@ public class Main {
             s[b].add(a);
         }
 
+        //iterGraph g = new iterGraph(s, n);
+       // for (Object o : g) {
+       //     System.out.println(o);
+        //}
         iterGraph g = new iterGraph(s, n);
-        for (Object o : g) {
-            System.out.println(o);
+        Iterator iterator = g.iterator();
+        while(iterator.hasNext()) {
+            int x = (int) iterator.next();
+            System.out.println(x);
         }
-
         System.out.println(g);
     }
 }
