@@ -225,7 +225,7 @@ public class Main {
                 throw new RuntimeException("syntax error at (" + lexemes.current().line
                         + ", " + lexemes.current().column + ")");
             }
-            return "( " + bool + " )";
+            return "( " + bool + ") ";
         }
         else {
             throw new RuntimeException("syntax error at (" + lexeme.line
